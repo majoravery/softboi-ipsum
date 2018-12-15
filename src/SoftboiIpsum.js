@@ -180,9 +180,9 @@ export default function SoftboiIpsum() {
         {output.map((o, i) => createElement("p", { className: "cry", key: i }, o) )}
       </div>
       <div className="credit">
-        {/* add a softboi face here that cries on hover */}
-        made by avery<br/>
-        quotes from <a href="https://www.instagram.com/beam_me_up_softboi/" target="_blank" rel="noopener noreferrer">beam_me_up_softboi</a>
+        <img className="pomo" src="./pomo.png" alt="im a pomegranate" />
+        <p>made by avery</p>
+        <p>quotes from <a href="https://www.instagram.com/beam_me_up_softboi/" target="_blank" rel="noopener noreferrer">beam_me_up_softboi</a></p>
       </div>
     </section>
   );
