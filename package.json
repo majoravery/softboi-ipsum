@@ -2,6 +2,7 @@
   "name": "softboi-ipsum",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://mupps.github.io/softboi-ipsum",
   "dependencies": {
     "now": "^12.1.5",
     "react": "^16.7.0-alpha.2",
