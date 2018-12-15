@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/softboi-ipsum/precache-manifest.4318f71655154f09493846b8ef39b76f.js"
+  "/softboi-ipsum/precache-manifest.3538675ba9cbe143f8057d25a658d592.js"
 );
 
 workbox.clientsClaim();
