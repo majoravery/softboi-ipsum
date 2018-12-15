@@ -181,7 +181,7 @@ export default function SoftboiIpsum() {
       </div>
       <div className="credit">
         <img className="pomo" src="./pomo.png" alt="im a pomegranate" />
-        <p>made by avery</p>
+        <p>made by <a href="https://www.instagram.com/spacemup/" target="_blank" rel="noopener noreferrer">avery</a></p>
         <p>quotes from <a href="https://www.instagram.com/beam_me_up_softboi/" target="_blank" rel="noopener noreferrer">beam_me_up_softboi</a></p>
       </div>
     </section>
