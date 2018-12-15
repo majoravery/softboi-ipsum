@@ -23,6 +23,40 @@ body {
   justify-content: center;
 }
 
-.paragraph:first-letter {
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  padding: 20px 30px;
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, snow, linen);
+}
+
+.logo {
+  display: inline-block;
+  margin: auto;
+  font-size: 28px;
+  font-family: 'Pacifico', cursive;
+  color: saddlebrown;
+}
+
+.beamer {
+  margin: 10px auto;
+}
+
+.cries {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.cry:first-letter {
   text-transform: capitalize;
+}
+
+.credit {
+  margin: 30px auto 20px;
+  font-size: 11px;
 }

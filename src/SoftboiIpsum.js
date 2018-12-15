@@ -1,8 +1,8 @@
 import React, { createElement, useState, useEffect } from 'react';
-import styled from 'styled-components';
 
 import useBeamer from './useBeamer';
 
+const MIN_CHAR_IN_PARAGRAPH = 500;
 const emotions = [
   "happiness is a warm book",
   "I mean if you can't feel the spiritual connection in that song then do you even feel music on a level you know",
@@ -137,33 +137,6 @@ const emotions = [
   "I just wish you cared I guess"
 ];
 
-const MIN_CHAR_IN_PARAGRAPH = 500;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 800px;
-  padding: 20px 30px;
-  margin: 20px;
-  border: 2px solid white;
-  border-radius: 4px;
-  background: linear-gradient(to bottom, snow, linen);
-`;
-
-const Logo = styled.h1`
-  display: inline-block;
-  margin: auto;
-  font-size: 28px;
-  font-family: 'Pacifico', cursive;
-  color: saddlebrown;
-`;
-
-const Cries = styled.div`
-  margin-top: 10px;
-  text-align: justify;
-`;
-
 function getCries(paragraphs) {
   let cries = [];
 
@@ -194,12 +167,16 @@ export default function SoftboiIpsum() {
   );
 
   return (
-    <Container>
-      <Logo>Softboi Ipsum</Logo>
+    <section className="container">
+      <h1 className="logo">Softboi Ipsum</h1>
       {beamSelector}
-      <Cries>
-        {output.map((o, i) => createElement("p", { className: "paragraph", key: i }, o) )}
-      </Cries>
-    </Container>
+      <div className="cries">
+        {output.map((o, i) => createElement("p", { className: "cry", key: i }, o) )}
+      </div>
+      <div className="credit">
+        {/* add a softboi face here that cries on hover */}
+        made by avery
+      </div>
+    </section>
   );
 }
