@@ -3,6 +3,7 @@ import React, { createElement, useState, useEffect } from 'react';
 import useBeamer from './useBeamer';
 
 const MIN_CHAR_IN_PARAGRAPH = 500;
+
 const emotions = [
   "happiness is a warm book",
   "I mean if you can't feel the spiritual connection in that song then do you even feel music on a level you know",
@@ -31,7 +32,7 @@ const emotions = [
   "I can't drown my demons, they know how to swim and they sniff ketamine",
   "perfect blend",
   "I have a musky, manly smell and the way to my heart is through mazes",
-  "certian eyes speak decipherable codes",
+  "certain eyes speak decipherable codes",
   "I'm quite acidy",
   "maybe some time we can strum a guitar together naked in bed",
   "manic pixie dream girl",
@@ -168,14 +169,20 @@ export default function SoftboiIpsum() {
 
   return (
     <section className="container">
-      <h1 className="logo">Softboi Ipsum</h1>
-      {beamSelector}
+      <div className="about">
+        <h1 className="headline">softboi ipsum</h1>
+        <p className="subline">compact heart n emotions generator for all ur indie boy needs! (adjust scrobble for desired length of emotions)</p>
+      </div>
+      <div className="beamerWrap">
+        {beamSelector}
+      </div>
       <div className="cries">
         {output.map((o, i) => createElement("p", { className: "cry", key: i }, o) )}
       </div>
       <div className="credit">
         {/* add a softboi face here that cries on hover */}
-        made by avery
+        made by avery<br/>
+        quotes from <a href="https://www.instagram.com/beam_me_up_softboi/" target="_blank" rel="noopener noreferrer">beam_me_up_softboi</a>
       </div>
     </section>
   );

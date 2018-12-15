@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 html,
 body {
   height: 100%;
@@ -11,7 +13,7 @@ body {
   background: #b22;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, 'Rubik', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,31 +27,59 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 800px;
-  padding: 20px 30px;
+  padding: 20px;
   margin: 20px;
-  border: 2px solid white;
+  border: 2px solid linen;
   border-radius: 4px;
   background: linear-gradient(to bottom, snow, linen);
 }
 
-.logo {
-  display: inline-block;
-  margin: auto;
-  font-size: 28px;
+@media only screen and (min-width: 840px) {
+  .container {
+    padding: 20px 30px;
+  }
+}
+
+.about {
+  flex: 1 0 100%;
+  text-align: center;
+}
+
+.headline {
+  margin: 0;
+  font-size: 50px;
   font-family: 'Pacifico', cursive;
   color: saddlebrown;
 }
 
+.subline {
+  max-width: 500px;
+  padding: 0 20px;
+  margin: 1em auto;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.beamerWrap {
+  flex: 1 0 100%;
+  margin: 30px auto 20px;
+}
+
 .beamer {
-  margin: 10px auto;
+  width: 100%;
 }
 
 .cries {
+  flex: 1 0 100%;
   margin-top: 10px;
-  text-align: justify;
+}
+
+.cry {
+  font-size: 16px;
+  line-height: 23px;
 }
 
 .cry:first-letter {
@@ -57,6 +87,12 @@ body {
 }
 
 .credit {
+  flex: 1 0 100%;
   margin: 30px auto 20px;
   font-size: 11px;
+  text-align: center;
+}
+
+.credit a {
+  text-decoration: none;
 }
