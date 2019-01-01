@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/softboi-ipsum/static/css/main.34ac58d8.chunk.css"
   },
   {
-    "revision": "82ea62c3cbeeb2bd625da6d237201ed0",
+    "revision": "640ab2582dd0aa9c7681ec2e433e7ec3",
     "url": "/softboi-ipsum/index.html"
   }
 ];
